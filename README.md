@@ -29,6 +29,8 @@ We will be using some terminal commands, so let's make sure you know what they a
 | `touch {filename}.{ext}`   | touch        | create new empty file |
 | `rmdir {dirname}`   | remove directory        | deletes a directory |
 | `ssh {username}@{ip-address} or {hostname}`   | secure shell        | login into a remote Linux machine using SSH |
+| `CTRL + SHIFT + C` | copy | keyboard shortcut for copying from terminal |
+| `CTRL + SHIFT + V` | paste | keyboard shortcut for pasting into terminal |
 
 <p></p>
 
@@ -457,6 +459,8 @@ Then click `Create Repository`.
   5. A new window should open in your browser with the Jupyter Server.  If not copy and paste the give link in your browser.
 
   6. Open the `unix-conda-pip.ipynb` notebook and go through the demo.
+     
+  Note: JupyterLab is an acceptable alternative to Jupyter Notebooks if you prefer JupyterLab!
 
 </details>
 
