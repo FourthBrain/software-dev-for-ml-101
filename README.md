@@ -293,7 +293,7 @@ Then click `Create Repository`.
 </details>
 
 <details>
-  <summary>Adding FourthBrain Content to Your Repo</summary>
+  <summary>Adding The FourthBrain Whodunit? Content to Your Repo</summary>
 
   1. Check your remote git. 
 
@@ -346,10 +346,10 @@ Then click `Create Repository`.
   ```
 
 
-5. Add Fourthbrain (FB) repo as an extra remote repo:
+5. Add the Whodunit (WD) repo as an extra remote repo:
 
   ```console
-  git remote add FB git@github.com:FourthBrain/MLE-8.git
+  git remote add WD git@github.com:FourthBrain/whodunit.git
   ```
 
   Let's check our remote repos:
@@ -361,8 +361,8 @@ Then click `Create Repository`.
   At this point, you should have access to both your own repo and FourthBrain and should see something like this:
 
   ```console
-  FB    git@github.com:FourthBrain/MLE-8.git (fetch)
-  FB    git@github.com:FourthBrain/MLE-8.git (push)
+  WD    git@github.com:FourthBrain/whodunit.git (fetch)
+  WD    git@github.com:FourthBrain/whodunit.git (push)
   origin git@github.com:rafatisina/TestRepo.git (fetch)
   origin git@github.com:rafatisina/TestRepo.git (push)
   ```
@@ -373,15 +373,15 @@ Then click `Create Repository`.
   git fetch --all
   ```
 
-  Make a new branch for FB material (FBranch).
+  Make a new branch for the Whodunit material (WDBranch).
   ```console
-  git checkout --track -b FBranch FB/main
+  git checkout --track -b WDBranch WD/main
   ```
   
   You should see something like this:
   
   ```console
-  Branch 'FBranch' set up to track remote branch 'main' from 'FB'.
+  Branch 'WDBranch' set up to track remote branch 'main' from 'WD'.
   ```
 
   You can visually check whether you are in that branch:
@@ -397,7 +397,7 @@ Then click `Create Repository`.
   ```
 
   ```console
-  git merge FBranch --allow-unrelated-histories
+  git merge WDBranch --allow-unrelated-histories
   ```
 
   If there are any conflicts you'll need to resolve them.
@@ -416,12 +416,12 @@ Then click `Create Repository`.
   From now on... after each release follow these steps to update your repo with new content:
   ```console
   git fetch --all
-  git checkout FBranch
+  git checkout WDBranch
   git merge --ff-only @{u}
   git add .
   git commit -m "branch is updated"
   git checkout main
-  git merge FBranch --allow-unrelated-histories
+  git merge WDBranch --allow-unrelated-histories
   ```
 
   You will be asked to add a comment about why this change is necessary --> add a message.
