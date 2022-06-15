@@ -142,6 +142,9 @@ To get started, we need to download the MacOS package manager, <strong>Homebrew<
     `git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow`
 
     `git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch`
+     
+4. Install the `wget` command to continue following along
+     `brew install wget`
 
 Enter the following commands in terminal to setup your environment. When prompted, make sure to add `conda` to `init`.
 
